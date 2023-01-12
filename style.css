@@ -1,0 +1,276 @@
+/*CSS Reset: Início*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*CSS Reset: Fim*/
+
+/*Começo do CSS da página*/
+body {
+  font-family: "Poppins", sans-serif;
+  background: #e5e5e5;
+}
+body::before {
+  content: "";
+  width: 100vw;
+  height: 436px;
+  background: #535971;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.page {
+  width: 750px;
+  height: 1244px;
+  margin: auto;
+}
+legend,
+h1,
+h2,
+button {
+  font-family: "Staatliches", cursive;
+}
+header {
+  color: #ffffff;
+  width: 354px;
+  height: 117px;
+  margin: 146px 395px 60px 0;
+}
+header h1 {
+  margin: 0;
+  font-size: 48px;
+  width: 163px;
+  font-weight: inherit;
+  margin-bottom: 18px;
+}
+header p {
+  width: 417px;
+  height: 46px;
+  font-size: 20px;
+  font-weight: inherit;
+  line-height: 30px;
+}
+form {
+  background: #ffffff;
+  border-radius: 20px 20px 0 0;
+  border: none;
+  padding: 64px;
+}
+form fieldset {
+  color: #4e4958;
+  border: none;
+}
+form fieldset legend {
+  color: #535971;
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid#e6e6f0;
+  padding: 16px;
+}
+form fieldset h2 {
+  font-size: 20px;
+  line-height: 34px;
+}
+input {
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-top: 16px;
+}
+.input-wrapper label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+}
+.input-wrapper label span {
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c1bccc;
+}
+.input-wrapper label span:hover {
+  color: #a8a4b1;
+}
+.input-wrapper input {
+  height: 56px;
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.col-2 #info-name,
+#info-surName {
+  width: 300px;
+}
+.col-3 {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+.col-3 #event-date {
+  width: 300px;
+}
+.col-3 #event-start,
+#event-end {
+  width: 140px;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: #535971;
+  height: 160px;
+  border-radius: 0 0 20px 20px;
+}
+footer .button {
+  background: #ff5374;
+  width: 608px;
+  height: 55px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+}
+footer .button:hover {
+  background: #dd264b;
+}
+input:invalid {
+  border: 1px solid #ff1010;
+}
